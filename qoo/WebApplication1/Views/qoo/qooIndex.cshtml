@@ -7,40 +7,80 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>qooIndex</title>
+    <meta charset="UTF-8">
+    <title>QOO</title>
+    <title>Bootstrap Navigation Bar</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <style>
+        table, th, td {
+            border: 1px solid purple;
+            border-collapse: collapse;
+            text-align: center;
+            background-color:gainsboro;
+            color:black;
+        }
+        th{
+        background-color:mediumpurple;
+        color:white;
+    }
+    </style>
 </head>
 <body>
     <div></div>
-    <table border="1">
-        <thead></thead>
-        <tbody>
-            <tr>
-                <td>學號 </td>
-                <td>姓名 </td>
-                <td> </td>
-            </tr>
-            <tr>
-                <td>1102105333 </td>
-                <td>謝承恩 </td>
-                <td>組長 </td>
-            </tr>
-            <tr>
-                <td>1102105345 </td>
-                <td>李居鴻 </td>
-                <td>組員 </td>
-            </tr>
-            <tr>
-                <td>1102105349 </td>
-                <td>李育維 </td>
-                <td>組員 </td>
-            </tr>
-            <tr>
-                <td>1102105351 </td>
-                <td>王得祐 </td>
-                <td>組員 </td>
-            </tr>
-        </tbody>
-    </table>
+    <nav class="nav navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Brand</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a data-toggle="tab" href="#home">Home</a></li>
+                <li><a data-toggle="tab" href="#menu1">Page 1</a></li>
+                <li><a data-toggle="tab" href="#menu2">Page 2</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">First</a></li>
+                        <li><a href="#">Second</a></li>
+                        <li><a href="#">Third</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        </nav>
+        <table align="center" border="2" width="300" height="80">
+            <thead></thead>
+            <tbody>
+                <h3> Home</h3>
+                <tr>
+                    <th>學號 </th>
+                    <th>姓名 </th>
+                    <th> </th>
+                </tr>
+                <tr>
+                    <td>1102105333 </td>
+                    <td>謝承恩 </td>
+                    <td>組長 </td>
+                </tr>
+                <tr>
+                    <td>1102105345 </td>
+                    <td>李居鴻 </td>
+                    <td>組員 </td>
+                </tr>
+                <tr>
+                    <td>1102105349 </td>
+                    <td>李育維 </td>
+                    <td>組員 </td>
+                </tr>
+                <tr>
+                    <td>1102105351 </td>
+                    <td>王得祐 </td>
+                    <td>組員 </td>
+                </tr>
+            </tbody>
+        </table>
 </body>
 </html>
